@@ -7,8 +7,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="shared.css">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="./shared.css">
+    <link rel="stylesheet" href="./main.css">
 
 </head>
 <body>
@@ -21,7 +21,7 @@
     <nav  class="main-nav">
         <ul  class="main-nav_items">
             <li class="main-nav_item">
-                <a href="packages/index.html">Packages</a>
+                <a href="./packages/index.html">Packages</a>
             </li>
             <li  class="main-nav_item">
                 <a href="customers/index.html">Customers</a>
@@ -36,10 +36,11 @@
     <section id="product-overview">
         <h1>Get the freedom you deserve</h1>
     </section>
+
     <section id="plans">
         <h1 class="section-title">Choose your plan</h1>
 
-        <div>
+        <div class="plan__list">
             <article class="plan">
                 <h1 class="plan__title">FREE</h1>
                 <h2 class="plan__price">$0/month</h2>
@@ -55,8 +56,8 @@
                 </div>
             </article>
 
-            <article class="plan plan--highlighted">
-                <h1 class="plan_annotation">RECOMMENDED</h1>
+            <article class="plan plan__highlighted">
+                <h1 class="plan__annotation">RECOMMENDED</h1>
                 <h1 class="plan__title">PLUS</h1>
                 <h2 class="plan__price">$29/month</h2>
                 <h3>For ambitious projects</h3>

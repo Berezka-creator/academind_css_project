@@ -1,17 +1,12 @@
-* {
-    box-sizing: border-box;
-}
 
-body {
-    font-family: 'Montserrat', sans-serif;
-    margin: 0;
-}
 
 #product-overview{
-    background: url("subset.jpeg");
+    background: url("./images/subset.jpeg");
     width: 100%;
     height: 528px;
     padding: 10px;
+    margin-top: 43px;
+    position: relative;
 }
 
 .section-title {
@@ -22,6 +17,9 @@ body {
 #product-overview h1 {
     color: white;
     font-family: 'Anton', sans-serif;
+    position: absolute;
+    bottom: 5%;
+    left: 3%;
 }
 
 .plan {
@@ -34,13 +32,19 @@ body {
     vertical-align: middle;
 }
 
-.plan--highlighted{
+.plan__list {
+    width: 80%;
+    margin: auto;
+    text-align:center ;
+}
+
+.plan__highlighted{
     background: #19b84c;
     color: white;
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 
-.plan_annotation {
+.plan__annotation {
     background: white;
     color: #19b84c;
     padding: 8px;
