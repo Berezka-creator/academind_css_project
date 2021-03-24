@@ -29,7 +29,6 @@ body {
     text-decoration: none;
 }
 
-
 .main-header {
     width: 100%;
     position: fixed;
@@ -37,7 +36,7 @@ body {
     left:0;
     background: #2ddf5c;
     padding: 8px 16px;
-    z-index: 2;
+    z-index: 10;
 }
 .main-header > div {
     display: inline-block;
@@ -54,6 +53,12 @@ body {
     text-decoration: none;
     font-size: 22px;
     font-weight: bold;
+    height: 22px;
+    display: inline-block;
+}
+
+.main-header_brand img{
+    height: 100%;
 }
 .main-nav_items {
     margin: 0;
