@@ -17,7 +17,6 @@
     font-size: 1.6rem;
 }
 
-
 @media (min-width: 40rem) and (min-height: 60rem){
     #product-overview {
         height: 40vh;
