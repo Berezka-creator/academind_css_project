@@ -3,8 +3,12 @@
 }
 
 body {
-   /* font-family: 'Montserrat', sans-serif;
-    margin: 0;*/
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+main {
+    min-height: calc(100vh - 2rem - 4rem);
+    margin-top: 2.9rem;
 }
 /*HEADER*/
 .main-header {
@@ -19,6 +23,8 @@ body {
 .main-header > div {
     display: inline-block;
     vertical-align: middle;
+    margin:0;
+    padding:0;
 }
 
 .main-header__brand{
@@ -26,14 +32,19 @@ body {
     text-decoration: none;
     font-size: 22px;
     font-weight: bold;
-    height: 1.5rem;
-    display: inline-block;
     vertical-align: middle;
+    display: none;
+}
+
+@media (min-width: 40rem) {
+    .main-header__brand{
+        height: 1.9rem;
+        display: inline-block;
+    }
 }
 
 .main-header__brand img{
-    display: none;
-    width: 2.5rem;
+    height: 100%;
 }
 
 .backdrop {
@@ -63,21 +74,6 @@ body {
     .toggle-button{
         display: none;
     }
-
-    .main-header__brand{
-        color: #0e4f1f;
-        text-decoration: none;
-        font-size: 22px;
-        font-weight: bold;
-        height: 1.5rem;
-        display: inline-block;
-    }
-
-    .main-header__brand img{
-        height: 100%;
-        display: block;
-    }
-
 }
 
 .toggle-button:focus {
@@ -91,12 +87,6 @@ body {
     display: block;
     margin: 0.6rem 0;
 }
-
-
-
-
-
-
 
 /*NAVIGATION*/
 .main-nav {
@@ -117,6 +107,7 @@ body {
         list-style: none;
     }
 }
+
 .main-nav__item {
     display: inline-block;
     margin: 0 1rem;
@@ -140,7 +131,6 @@ body {
     background: red;
     padding: 0.5rem 1rem;
     border-radius: 8px;
-
 }
 
 .main-nav__item--cta a:hover,
