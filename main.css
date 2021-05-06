@@ -34,6 +34,7 @@
     padding: 1rem;
     width: 100%;
 }
+
 /*
 */
 .section-title {
@@ -109,17 +110,16 @@
     margin: 32px;
 }
 
-.key_features__list {
+.key-features__list {
     list-style: none;
     margin: 0;
     padding: 0;
-
 }
+
 .key-feature {
     display: block;
     color: white;
     text-align: center;
-
     width: 100%;
 }
 .key-feature__description {
