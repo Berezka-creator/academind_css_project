@@ -1,7 +1,9 @@
 
 
 #product-overview{
-    background: linear-gradient(to top, rgba(80, 68, 18, 0.6) 10%, transparent), url("./images/freedom.jpg") center/cover no-repeat border-box;
+    background: linear-gradient(to top, rgba(80, 68, 18, 0.6) 10%, transparent),
+    url("images/freedom.jpg") center/cover no-repeat border-box,
+    #ff1b68;
     width: 100vw;
     height: 33vh;
     position: relative;
@@ -12,7 +14,7 @@
     font-family: 'Anton', sans-serif;
     position: absolute;
     bottom: 5%;
-    left: 5%;
+    left: 3%;
     font-size: 1.6rem;
 }
 
@@ -28,26 +30,17 @@
     }
 }
 
-
-.plan__list {
-    display: flex;
-    flex-direction: column;
-}
-
-
 .section-title {   
-    font-size: 2rem;
+    color: #2ddf5c;
     text-align: center;
 }
 
 .plan {
     background: #d5ffdc;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 1rem;
-   
+    text-align: center;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    width: 100%;
 }
 
 .plan__highlighted{
@@ -66,26 +59,19 @@
 
 .plan__features {
     list-style: none;
-    text-align: center;
-    margin: 0.5rem 0;
+    margin: 0;
     padding: 0;
 }
 .plan__feature {
-    margin: 8px 0;
+    margin: 0.5rem 0;
 }
 
 .plan__title {
     color: #0e4f1f;
-    margin: 0.5rem 0;
-}
-.plan__price {
-    color: #2a2929;
-    margin: 0.5rem 0;
 }
 
-.plan h3{
-    padding: 0;
-    margin:0;
+.plan__price {
+    color: #2a2929;
 }
 
 .plan--highlighted .plan__title {
@@ -108,11 +94,16 @@
         min-width: 13rem;
         max-width: 25rem;
         display: flex;
-        flex-wrap: column;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 28rem;
+       
     }
 
-    .plan--highlighted {
+    .plan__highlighted {
         box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+        height: 30rem;
+        z-index: 50;
     }
 }
 
@@ -128,18 +119,14 @@
     margin: 32px;
 }
 
-.key-features__list {
-    display: flex;
-    flex-direction: column;
+.key-feature__list {
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
 .key-feature {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    text-align: center;
     color: white;
 }
 
@@ -160,19 +147,14 @@
 
 @media (min-width: 40rem){
 
-    .key-features__list {
-        align-items: center;
+    .key-feature__list {
+        display: flex;
         justify-content: center;
-        flex-direction: row;
-        margin: 0;
-        padding: 0;
     }
 
     .key-feature {
-        justify-content: start;
-        align-items: center;
         width: 30%;
+        min-width: 15rem;
         max-width: 25rem;
     }
 }
-
